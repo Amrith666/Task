@@ -25,7 +25,7 @@ const Movieitem = ({ id, title, posterUrl, releaseDate }) => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button sx={{margin:"auto"}} size="small">Share</Button>
+          <Button sx={{margin:"auto"}} size="small">Book</Button>
         </CardActions>
       </Card>
     </div>

@@ -8,7 +8,7 @@ import Auth from "./components/Auth/Auth";
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Header/>    
       <section>
         <Routes>
           <Route path='/' element={<Homepage/>}/>

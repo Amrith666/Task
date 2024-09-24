@@ -3,6 +3,8 @@ import { Box, Typography,Button } from "@mui/material";
 import Movieitem from "./Movies/Movieitem";
 import { Link } from "react-router-dom";
 import { getAllMovies } from "../api/api";
+import Carousel from 'react-material-ui-carousel';
+import { Paper   } from '@mui/material'
 
 const Homepage = () => {
     const [movies,setMovies]=useState([]);
@@ -31,7 +33,7 @@ const Homepage = () => {
   flexWrap={"wrap"}
   margin={"auto"}
 >
-  {movies && movies.map((movie, index) => (
+  {movies && movies.slice(0,4).map((movie, index) => (
     <Movieitem 
       key={index}
       id={movie.id}
@@ -50,3 +52,5 @@ const Homepage = () => {
 };
 
 export default Homepage;
+
+

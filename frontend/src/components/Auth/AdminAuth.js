@@ -1,12 +1,12 @@
 import React from 'react'
 import AuthForm from './AuthForm'
 
-const Auth = () => {
+const AdminAuth = () => {
   return (
     <div>
-      <AuthForm/>
+      
     </div>
   )
 }
 
-export default Auth
+export default AdminAuth
